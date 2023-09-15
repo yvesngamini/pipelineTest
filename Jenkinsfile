@@ -9,6 +9,11 @@ pipeline {
                 echo 'make a test '
             }
         }
+        stage('test') {
+            steps {
+                bat mvn clean install pom.xml
+            }
+        }
     }
 }
 
