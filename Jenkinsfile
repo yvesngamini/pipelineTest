@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+       maven 'maven'
+    }
     triggers{
         pollSCM '* * * * *'
     }
@@ -11,7 +14,9 @@ pipeline {
         }
         stage('test') {
             steps {
-                bat mvn clean install pom.xml
+              withMaven(traceability: true){
+                      sh "mvn install"
+                }
             }
         }
     }
