@@ -14,9 +14,9 @@ pipeline {
         }
         stage('test') {
             steps {
-              withMaven(traceability: true){
-                      sh "mvn install"
-                }
+              
+                 bat "mvn install"
+                
             }
         }
     }
