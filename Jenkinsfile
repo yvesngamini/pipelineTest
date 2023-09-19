@@ -1,7 +1,7 @@
-@Grab(group='org.modelcatalogue', module='spreadsheet-builder-poi', version='0.4.1')
+@library(group='org.modelcatalogue', module='spreadsheet-builder-poi', version='0.4.1')
 // fixes bugs on Groovy 2.4.x
-@Grab(group='commons-codec', module='commons-codec', version='1.10')
-@GrabExclude('org.codehaus.groovy:groovy-all')
+@library(group='commons-codec', module='commons-codec', version='1.10')
+@libraryExclude('org.codehaus.groovy:groovy-all')
 
 import org.modelcatalogue.spreadsheet.api.Cell
 import org.modelcatalogue.spreadsheet.builder.poi.PoiSpreadsheetBuilder
