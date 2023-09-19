@@ -15,20 +15,12 @@
 <build>
         <plugins>
             <plugin>
-                <!--  this is the maven plugin, it is necesary to compile the xml file  -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>1.8.0</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>java</goal>
-                        </goals>
-                    </execution>
-                </executions>
+                <version>3.8.1</version> <!-- Aktualisiere diese Zeile auf die gewünschte Version -->
                 <configuration>
-                    <source>1.8.0</source>
-                    <target>1.8.0</target>
+                    <source>1.8</source> <!-- Die Java-Version, die du verwenden möchtest -->
+                    <target>1.8</target> <!-- Die Zielausgabe-Java-Version -->
                 </configuration>
             </plugin>
         </plugins>
