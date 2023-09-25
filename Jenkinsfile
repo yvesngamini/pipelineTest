@@ -31,25 +31,8 @@ pipeline {
         }
         stage('Excel erstellen'){
             steps{
-                File file = new File('spreadsheet.xlsx')
-
-                PoiSpreadsheetBuilder.INSTANCE.build {                                                  // <1>
-                    sheet('Sample') {                                                                   // <2>
-                        row {                                                                           // <3>
-                            cell 'A'                                                                    // <4>
-                            cell 'B'
-                            cell 'C'
-                            cell 'D'
-                        }
-                        row {
-                            cell 1
-                            cell 2
-                            cell 3
-                            cell 4
-                        }
-                    }
-                } writeTo file 
-
+                  echo 'test 19.09.2023'
+ 
             }
         }
     }
