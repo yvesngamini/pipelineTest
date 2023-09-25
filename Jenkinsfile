@@ -39,11 +39,13 @@ pipeline {
                             cell 'A'                                                                    // <4>
                             cell 'B'
                             cell 'C'
+                            cell 'D'
                         }
                         row {
                             cell 1
                             cell 2
                             cell 3
+                            cell 4
                         }
                     }
                 } writeTo file 
