@@ -52,5 +52,13 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- Excel Builder -->
+         <dependency> 
+            <groupId>builders.dsl</groupId>
+            <artifactId>spreadsheet-builder-poi</artifactId>
+            <version>3.0.1</version>
+            <type>pom</type>
+        </dependency>
+
 </dependencies>
 </project>
